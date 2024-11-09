@@ -43,8 +43,3 @@ describe('example to-do app', () => {
     cy.get('#submit').click()
   })
 })
-
-    // Проверка успешного оформления заказа
-    cy.get('h1').should('contain', 'Thank you, your order has been placed.')
-  })
-})
