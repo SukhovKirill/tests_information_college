@@ -13,6 +13,7 @@ describe("Task Manager", () => {
     localStorage.clear();
   });
 
+  //1
   test("should add a task", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Test task">
@@ -27,6 +28,7 @@ describe("Task Manager", () => {
     );
   });
 
+  //2
   test("should not add an empty task", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="">
@@ -40,6 +42,7 @@ describe("Task Manager", () => {
     alertMock.mockRestore();
   });
 
+  //3
   test("should toggle task completion", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Task to toggle">
@@ -54,6 +57,7 @@ describe("Task Manager", () => {
     expect(getTasks()[0].completed).toBe(false);
   });
 
+  //4
   test("should edit a task", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Task to edit">
@@ -70,6 +74,7 @@ describe("Task Manager", () => {
     promptMock.mockRestore();
   });
 
+  //5
   test("should delete a task", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Task to delete">
