@@ -14,7 +14,7 @@ describe("Task Manager", () => {
   });
 
   //1
-  test("should add a task", () => {
+  test("Добавить задачу", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Test task">
             <button id="addTaskBtn">Add Task</button>
@@ -29,7 +29,7 @@ describe("Task Manager", () => {
   });
 
   //2
-  test("should not add an empty task", () => {
+  test("Не добавдять задачу если пустая форма", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="">
             <button id="addTaskBtn">Add Task</button>
@@ -43,7 +43,7 @@ describe("Task Manager", () => {
   });
 
   //3
-  test("should toggle task completion", () => {
+  test("Переключение завершенной задачи", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Task to toggle">
             <button id="addTaskBtn">Add Task</button>
@@ -58,7 +58,7 @@ describe("Task Manager", () => {
   });
 
   //4
-  test("should edit a task", () => {
+  test("Редактирование задачи", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Task to edit">
             <button id="addTaskBtn">Add Task</button>
@@ -75,7 +75,7 @@ describe("Task Manager", () => {
   });
 
   //5
-  test("should delete a task", () => {
+  test("Удаление задачи", () => {
     document.body.innerHTML = `
             <input id="taskInput" value="Task to delete">
             <button id="addTaskBtn">Add Task</button>
