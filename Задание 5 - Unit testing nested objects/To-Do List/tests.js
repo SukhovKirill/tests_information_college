@@ -8,7 +8,7 @@ import {
   saveTasks,
 } from "./script.js";
 
-describe("Task Manager", () => {
+describe("script", () => {
   beforeEach(() => {
     localStorage.clear();
   });
